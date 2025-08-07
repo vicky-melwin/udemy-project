@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Udemy</title>
+   <!-- Style.css link  -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Google font link  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+   <!-- Google font for image-sale -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet">
+   <!-- Font Awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!-- Navbar -->
+   <div class="navbar">
+
+      <div class="navbar__s1">
+         <h1 class="navbar__s1__title">Udemy</h1>
+      </div>
+      <div class="navbar__s2">
+         <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+         <input placeholder="Search for Anything here. Tech, Business, Art,...">
+      </div>
+      <div class="navbar__s3">
+         <p class="navbar__s3__1">Courses</p>
+         <!-- <p class="navbar__s3__2">My Learning</p> -->
+         <div class="mylearning">
+            <p>My Learning</p>
+            <div class="mylearning__popup">
+               <p>You did not purchase anything yet</p>
+            </div>
+         </div>
+         <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+         <i class="fa-solid fa-bell" style="color: #000000;"></i>
+         <i class="fa-solid fa-user" style="color: #000000;"></i>
+      </div>
+
+   </div>
+
+   <div class="categories">
+      <p>Development</p>
+      <p>Business</p>
+      <p>IT & Software</p>
+      <p>Personal Development</p>
+      <p>Design</p>
+      <p>Marketing</p>
+   </div>
+
+   <!-- Sale Image -->
+
+   <div class="sale-image">
+      <img src="./images/sale-image.png" alt="Sale Image">
+      <div class="sale-image__offer">
+         <h1 class="offer">Meet your new AI conversation coach</h1>
+         <p class="sale-image__desc">Role Play is the interactive way to practice your business and communication
+            skills.</p>
+         <button class="sale-image__button">
+            <h4>Find courses with Role Play</h4>
+         </button>
+      </div>
+   </div>
+
+   <!-- Recommended -->
+   <div class="recommended">
+      <h1 class="recommended__title">Recommended for you</h1>
+      <p class="pick">Pick the best fit</p>
+      <div class="recommended__container">
+         <div class="course-card">
+            <img src="./images/c1.jpg">
+            <h3>Visualization Masterclass</h3>
+            <p>Col Steele</p>
+            <p>4.6 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c2.jpg">
+            <h3>Basic to Advance Programming with EMC</h3>
+            <p>Agnel John</p>
+            <p>4.9 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c3.jpg">
+            <h3>Web Development Bootcamp</h3>
+            <p>Agnel John</p>
+            <p>5.0 ⭐⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c4.jpg">
+            <h3>Maste UI/UX Designing with Figma</h3>
+            <p>Col Steele</p>
+            <p>4.7 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+      </div>
+   </div>
+
+   <!-- Topic -->
+   <div class="topics">
+      <h1 class="topics__title">Topics recommended for you</h1>
+      <div class="topics__container">
+         <p>Website</p>
+         <p>JavaScript</p>
+         <p>CSS</p>
+         <p>Mongo DB</p>
+         <p>Azure</p>
+         <p>AWS</p>
+         <p>Docker</p>
+         <p>GitHub</p>
+         <p>React JS</p>
+      </div>
+   </div>
+
+   <!-- Popular -->
+   <div class="popular">
+      <h1 class="popular__title">Most popular</h1>
+      <p class="popular__subtitle">Pick the best fit</p>
+      <div class="popular__container">
+         <div class="course-card">
+            <img src="./images/c5.jpg">
+            <h3>The Complete JavaScript Course</h3>
+            <p>Col Steele</p>
+            <p>4.6 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c6.jpg">
+            <h3>Angular - The Complete Guide</h3>
+            <p>Agnel John</p>
+            <p>4.9 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c7.jpg">
+            <h3>Flutter & Dart - The Complete Guide</h3>
+            <p>Agnel John</p>
+            <p>5.0 ⭐⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c8.jpg">
+            <h3>React Native - The Practical Guide</h3>
+            <p>Col Steele</p>
+            <p>4.7 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c9.jpg">
+            <h3>The Complete Flutter Development Bootcamp</h3>
+            <p>Col Steele</p>
+            <p>4.6 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c10.jpg">
+            <h3>Python for Data Science and Machine Learning Bootcamp</h3>
+            <p>Agnel John</p>
+            <p>4.9 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c11.jpg">
+            <h3>Machine Learning & Deep Learning in Python & R</h3>
+            <p>Agnel John</p>
+            <p>5.0 ⭐⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c12.jpg">
+            <h3>Deep Learning A-Z 2025: Neural Networks, AI & ChatGPT </h3>
+            <p>Col Steele</p>
+            <p>4.7 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="companies">
+      <p>Trusted by over 16,000 companies and millions of learners around the world</p>
+      <div companies__logos>
+         <img src="./images/samsung.svg" class="img1">
+         <img src="./images/cisco.svg" class="img1">
+         <img src="./images/citi.svg" class="img1">
+         <img src="./images/vimeo.svg" class="img1">
+         <img src="./images/ericsson.svg" class="img1">
+         <img src="./images/volkswagen.svg" class="img1">
+
+      </div>
+   </div>
+
+   <!-- Research topics  -->
+   <div class="popular">
+      <h1 class="popular__title">Based on your recent searches</h1>
+      <p class="popular__subtitle">Pick the best fit</p>
+      <div class="popular__container">
+         <div class="course-card">
+            <img src="./images/c5.jpg">
+            <h3>The Complete JavaScript Course</h3>
+            <p>Col Steele</p>
+            <p>4.6 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c6.jpg">
+            <h3>Angular - The Complete Guide</h3>
+            <p>Agnel John</p>
+            <p>4.9 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c7.jpg">
+            <h3>Flutter & Dart - The Complete Guide</h3>
+            <p>Agnel John</p>
+            <p>5.0 ⭐⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c8.jpg">
+            <h3>React Native - The Practical Guide</h3>
+            <p>Col Steele</p>
+            <p>4.7 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c9.jpg">
+            <h3>The Complete Flutter Development Bootcamp</h3>
+            <p>Col Steele</p>
+            <p>4.6 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c10.jpg">
+            <h3>Python for Data Science and Machine Learning Bootcamp</h3>
+            <p>Agnel John</p>
+            <p>4.9 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c11.jpg">
+            <h3>Machine Learning & Deep Learning in Python & R</h3>
+            <p>Agnel John</p>
+            <p>5.0 ⭐⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+         <div class="course-card">
+            <img src="./images/c12.jpg">
+            <h3>Deep Learning A-Z 2025: Neural Networks, AI & ChatGPT </h3>
+            <p>Col Steele</p>
+            <p>4.7 ⭐⭐⭐⭐</p>
+            <p>₹449 <del>1999</del></p>
+         </div>
+
+      </div>
+   </div>
+
+   <!-- Payment details 
+   <h1 class="titlename">Accelerate growth — for you or your organization</h1>
+   <p class="titlenamr__subtitle">Reach goals faster with one of our plans or programs. Try one free today or contact
+      sales to learn more.</p>
+   <div class="payment__container">
+      <div class="box">
+         <h1>0/-</h1>
+         <h1>Free</h1>
+      </div>
+      <div class="box1">
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Listen to Music</b></p>
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Share Links</b></p>
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Create a Playlist</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Ad free Music</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Download Music</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Upload your music</b></p>
+      </div>
+
+      <div class="box">
+         <h1>0/-</h1>
+         <h1>Free</h1>
+      </div>
+      <div class="box1">
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Listen to Music</b></p>
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Share Links</b></p>
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Create a Playlist</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Ad free Music</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Download Music</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Upload your music</b></p>
+      </div>
+
+      <div class="box">
+         <h1>0/-</h1>
+         <h1>Free</h1>
+      </div>
+      <div class="box1">
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Listen to Music</b></p>
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Share Links</b></p>
+         <p class="desc"> <img src="./images/tick.png" class="inline"> <b>Create a Playlist</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Ad free Music</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Download Music</b></p>
+         <p class="desc"> <img src="./images/multiplication.png" class="inline"> <b>Upload your music</b></p>
+      </div>
+   </div> -->
+
+
+   <!-- Footer  -->
+   <div class="footer">
+      <div class="footer__one">
+         <div class="footer__one__s1">
+            <p>Udemy Business</p>
+            <p>Teach on Udemy</p>
+            <p>Get the app</p>
+            <p>About us</p>
+            <p>Contact us</p>
+         </div>
+         <div class="footer__one__s2">
+            <p>Careers</p>
+            <p>Blog</p>
+            <p>Help and Support</p>
+            <p>Affiliate</p>
+            <p>Investors</p>
+         </div>
+      </div>
+
+      <div class="footer__two">
+         <h1>Udemy</h1>
+         <p>&copy; Udemy,Inc.</p>
+      </div>
+
+   </div>
+
+
+</body>
+
+</html>

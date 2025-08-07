@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+
+.navbar__s1__title {
+    color: #a435f0;
+    align-items: center;
+}
+
+.navbar__s1__title:hover {
+    cursor: default;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__s2 input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center56;
+}
+
+.navbar__s3__1:hover,
+.navbar__s3__2:hover {
+    cursor: pointer;
+    color: #a435f0;
+}
+
+.mylearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    margin-top: 10px;
+    width: 200px;
+    right: 0;
+    padding: 10px;
+    display: none;
+}
+
+.mylearning:hover .mylearning__popup {
+    display: block;
+}
+
+.mylearning p:hover {
+    color: #a435f0;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 30%;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    align-items: center;
+}
+
+.categories p {
+    background-color: #a435f0;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid rgb(229, 225, 225) 2px;
+    border: #a435f0 solid 1px;
+}
+
+.categories p:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+    color: black;
+    border: #a435f0 solid 1px;
+}
+
+.sale-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-left: 100px;
+    position: relative;
+}
+
+
+.sale-image__offer {
+    position: absolute;
+    background-color: white;
+    /* border: solid black 2px; */
+    border: solid rgb(229, 225, 225) 2px;
+    border-width: 0;
+    width: 350px;
+    height: 200px;
+    top: 20%;
+    left: 100px;
+    padding: 20px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* .sale-image__offer,.offer,.sale-image__desc,.sale-image__button{
+    animation-name: zoom;
+    animation-delay: 2s;
+} */
+
+
+.sale-image__desc {
+    padding-top: 15px;
+}
+
+.sale-image__button {
+    background-color: #a435f0;
+    /* border-radius: 5px; */
+    border: solid rgb(229, 225, 225) 2px;
+    width: fit-content;
+    color: white;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.sale-image__button:hover {
+    cursor: pointer;
+}
+
+.sale-image__button h4:hover {
+    background-color: transparent;
+    color: white;
+    border: #a435f0 solid 1px;
+}
+
+.offer {
+    font-family: "Playfair Display", serif;
+}
+
+.recommended {
+    /* padding-top: 20px;
+    padding-left: 40px; */
+    margin: 10px;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.recommended__title {
+    /* padding-left: 25px; */
+    padding-left: 10px;
+}
+
+.recommended__title,
+.pick:hover {
+    cursor: default;
+}
+
+.pick {
+    padding: 12px;
+    /* padding-left: 5px; */
+}
+
+.course-card {
+    width: 320px;
+    transition-duration: 1s;
+}
+
+.course-card:hover {
+    cursor: pointer;
+}
+
+.course-card img {
+    width: 100%;
+    height: 60%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.course-card:hover {
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.recommended__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.topics {
+    padding: 10px;
+    margin: 10px;
+}
+
+.topics__title,
+.topics__container:hover {
+    cursor: default;
+}
+
+.topics__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topics__container p:hover {
+    background-color: rgb(183, 181, 181);
+    cursor: pointer;
+}
+
+.topics__container p {
+    border: solid gray 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    margin-top: 10px;
+}
+
+.popular {
+    padding: 10px;
+    margin: 10px;
+}
+
+.popular__title {
+    padding-left: 5px;
+}
+
+.popular__title,
+.popular__subtitle:hover {
+    cursor: default;
+}
+
+.popular__subtitle {
+    padding: 8px;
+}
+
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+ 
+/* Companies */
+
+.companies p {
+    text-align: center;
+}
+
+.companies__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 45px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+
+/* Subscription plans  */
+/* 
+.payment__container{
+    background-color: antiquewhite;
+}
+.payment__heading,.payment__subheading{
+    margin-left: 30px;
+} */
+
+
+.footer {
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__one p {
+    margin: 10px;
+}
+
+.footer__one p:hover {
+    cursor: pointer;
+    color: #a435f0;
+}
+
+.footer__two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer__two:hover {
+    cursor: default;
+}
+
+/* Subscription */
+.titlename {
+    padding: 5px;
+}
+
+.payment__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: solid black 2px;
+    color: black;
+    border-radius: 17px;
+    height: 320px;
+    width: 230px;
+    text-align: center;
+    position: relative;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    border: solid white 2px;
+    width: 185px;
+    border-radius: 10px;
+    padding-left: 12px;
+    color: white;
+    position: relative;
+    bottom: 270px;
+    left: 53px;
+
+}
+
+.desc {
+    color: black;
+}
+
+.inline {
+    width: 15px;
+    height: 15px;
+    padding: 7px;
+}
+
+/* Subscription */
+.titlename {
+    padding-left: 25px;
+}
+
+.titlenamr__subtitle {
+    padding-left: 25px;
+}
